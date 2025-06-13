@@ -1,6 +1,8 @@
 package com.string;
 
 public class Compare2Strings {
+	////Write a Java program to compare two strings without using .equals() method.
+	
 public static void main(String[] args) {
 	String s1="Manasi";
 	String s2="Manesi";
