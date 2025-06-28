@@ -5,5 +5,7 @@ public class ReplaceChar {
 
 	public static void main(String[] args) {
 		String s="satara";
+		String s1=s.replace('a', 'e');
+		System.out.println(s1);
 	}
 }
