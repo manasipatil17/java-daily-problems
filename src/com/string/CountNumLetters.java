@@ -20,8 +20,8 @@ public static void main(String[] args) {
 			sCount++;
 		}
 	}
-	System.out.println(lCount);
-	System.out.println(nCount);
-	System.out.println(sCount);
+	System.out.println("Letters count : "+lCount);
+	System.out.println("Numbers count : "+nCount);
+	System.out.println("Symbols count : "+sCount);
 }
 }
