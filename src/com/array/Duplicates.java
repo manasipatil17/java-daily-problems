@@ -19,7 +19,9 @@ public static void main(String[] args) {
 		
 	}
 	for(Entry<Integer,Integer> e : m.entrySet()) {
+		if(e.getValue()>1) {
 		System.out.println(e);
 	}
+}
 }
 }
