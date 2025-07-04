@@ -9,16 +9,16 @@ public class MinMaxInArray {
 		int min=a[0];
 		int max=a[0];
 		
-		for(int i=1;i<a.length;i++) {
-			if(a[i]<min) {
-				min=a[i];
-			}
-			else if(a[i]>max){
+		for(int i=0;i<a.length;i++) {
+			if(a[i]>max) {
 				max=a[i];
 			}
+			else if(a[i]<min) {
+				min=a[i];
+			}
 		}
-		System.out.println("Smallest element in array : "+min);
-		System.out.println("Largest element in array : "+max);
+		System.out.println("Maximum element : "+max);
+		System.out.println("Minimum element : "+min);
 		
 	}
 }
