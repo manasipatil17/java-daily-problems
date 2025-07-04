@@ -32,6 +32,6 @@ public class RomanToInt {
     }
 public static void main(String[] args) {
 	RomanToInt r=new RomanToInt();
-	System.out.println(r.romanToInt("IIM"));
+	System.out.println(r.romanToInt("IXXV"));
 	}
 }
