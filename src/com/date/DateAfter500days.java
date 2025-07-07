@@ -8,11 +8,10 @@ public class DateAfter500days {
 	
 	public static void main(String[] args) {
         // Get today's date
-        LocalDate today = LocalDate.now();
-
-        LocalDate futureDate = today.plusDays(500);
-
-        System.out.println("Today's date: " + today);
-        System.out.println("Date after 500 days: " + futureDate);
+       LocalDate today= LocalDate.now();
+       LocalDate future= today.plusDays(500);
+       
+       System.out.println("Today's Date : "+today);
+       System.out.println("Date after 500 days : "+future);
     }
 }
