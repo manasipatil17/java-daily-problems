@@ -13,7 +13,6 @@ public class Even {
 			for(int n:num) {
 				if(n%2==0) {
 					System.out.print(n+" ");
-					
 				}
 			}
 
