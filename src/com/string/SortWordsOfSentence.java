@@ -14,8 +14,10 @@ public class SortWordsOfSentence {
 		String a[]=s.split(" ");
 		Arrays.sort(a);
 		
-		for (String s1 : a) {
-			System.out.print(s1+" ");
-		}
+//		for (String s1 : a) {
+//			System.out.print(s1+" ");
+//			
+//		}
+		System.out.println(String.join(" ", a));
 	}
 }
