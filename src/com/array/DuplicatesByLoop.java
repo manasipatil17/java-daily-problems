@@ -1,4 +1,4 @@
-package com.array;
+ package com.array;
 
 public class DuplicatesByLoop {
 public static void main(String[] args) {
