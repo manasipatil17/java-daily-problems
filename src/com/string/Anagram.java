@@ -8,20 +8,21 @@ public static void main(String[] args) {
 	String s2="listen";
 	
 	if(s1.length()==s2.length()) {
+		char c1[]=s1.toCharArray();
+		char c2[]=s2.toCharArray();
 		
-	char[] c1=s1.toCharArray();
-	char[] c2=s2.toCharArray();
-	Arrays.sort(c1);
-	Arrays.sort(c2);
-	if(Arrays.equals(c1,c2)) {
-		System.out.println("String is anagram");
+		Arrays.sort(c1);
+		Arrays.sort(c2);
+		
+		if(Arrays.equals(c1, c2)) {
+			System.out.println("String is anagram");
+		}
+		else {
+			System.out.println("String is not anagram");
+		}
 	}
 	else {
 		System.out.println("String is not anagram");
-	}
-	}
-	else {
-		System.out.println("Strings are not anagram");
 	}
 }
 }
