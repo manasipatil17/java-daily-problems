@@ -8,7 +8,7 @@ public class Duplicates {
 public static void main(String[] args) {
 	
 	
-	int a[]= {12,22,33,22,11,44,55};
+	int a[]= {12,22,33,22,11,44,55,22,33};
 	
 	Map<Integer, Integer> m=new HashMap<>();
 	
@@ -21,13 +21,11 @@ public static void main(String[] args) {
 		}
 	}
 	
-	for(Entry<Integer, Integer> e: m.entrySet()) {
-		
-		if(e.getValue()>1) {
-			System.out.println(e);
+	for (Entry<Integer,Integer> e : m.entrySet()) {
+		if(e.getValue()>=2) {
+			System.out.println(e.getKey()+" = "+e.getValue());
 		}
 	}
-	
 	
 	}
 }
