@@ -2,20 +2,22 @@ package com.array;
 
 public class SecondSmallest {
 public static void main(String[] args) {
-	int arr[]= {12,32,56,45,67};
+	int a[]= {12,32,56,45,67};
 	
 	int smallest=Integer.MAX_VALUE;
-	int secSmallest=Integer.MAX_VALUE;
+	int secSmallest= Integer.MAX_VALUE;
 	
-	for(int n:arr) {
-		if(n<smallest) {
-			secSmallest=smallest;
-			smallest=n;
+	for(int i=0;i<a.length;i++) {
+		int temp;
+		if(a[i]<smallest && a[i]<secSmallest) {
+			temp=smallest;
+			smallest=a[i];
+			secSmallest=temp;
 		}
-		else if(n<secSmallest && n!=smallest) {
-			secSmallest=n;
+		else if(a[i]<secSmallest && a[i]>smallest) {
+			secSmallest=a[i];
 		}
 	}
-	System.out.println("Second smallest number is "+secSmallest);
-}
+	System.out.println("Second smallest element is "+secSmallest);
+	}
 }
