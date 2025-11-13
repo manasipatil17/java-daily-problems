@@ -10,9 +10,9 @@ public class Even {
 			int num[]= {11,12,13,14,15,16,17,18,19,20};
 			
 			System.out.println("Even numbers from given array : ");
-			for (int i : num) {
-				if(i%2==0) {
-					System.out.print(i+" ");
+			for(int i=0;i<num.length;i++) {
+				if(num[i]%2==0) {
+					System.out.print(num[i]+" ");
 				}
 			}
 		}

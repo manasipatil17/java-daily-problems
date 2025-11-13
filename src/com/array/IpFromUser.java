@@ -12,8 +12,6 @@ public class IpFromUser {
 		for(int i=0;i<num.length;i++) {
 			num[i]=sc.nextInt();
 		}
-		
 		System.out.println(Arrays.toString(num));
-	
 	}
 }

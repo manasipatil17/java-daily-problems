@@ -7,17 +7,17 @@ public static void main(String[] args) {
     int secLargest=Integer.MIN_VALUE;
     
     for(int i=0;i<a.length;i++) {
-    	int temp;
-    	if(a[i]>largest) {
-    		temp=largest;
+    	if(a[i]<largest && a[i]>secLargest) {
+    		int temp=largest;
     		largest=a[i];
     		secLargest=temp;
     	}
-    	else if(a[i]<largest && a[i]>secLargest) {
-    		secLargest=a[i];
+    	else if(a[i]>largest) {
+    		largest=a[i];
     	}
-    	
     }
-    System.out.println("Second largest element is "+secLargest);
+    System.out.println("Largest element is "+largest);
+    System.out.println("secLargest element is "+secLargest);
+
 }
 }
