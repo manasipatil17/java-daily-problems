@@ -10,7 +10,19 @@ public static void main(String[] args) {
 	StringBuilder symbol=new StringBuilder();
 	for(char c:ch) {
 		
+		if(Character.isLetter(c)) {
+			letter.append(c);
+		}
+		else if(Character.isDigit(c)) {
+			number.append(c);
+		}
+		else {
+			symbol.append(c);
+		}
 	}
+	System.out.println("Letters : "+letter);
+	System.out.println("Numbers : "+number);
+	System.out.println("Symbols : "+symbol);
 	//	for(char c:s.toCharArray()) {
 //		if(Character.isLetter(c)) {
 //			letters.append(c);

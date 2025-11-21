@@ -10,7 +10,7 @@ public static void main(String[] args) {
 	int v[]= new int[3];
 	
 	for(int i=0;i<a.length;i++) {
-		String s= a[i].toLowerCase();
+		String s= a[i];//.toLowerCase();
         int count =0;
         char[] c=s.toCharArray();
         for (int j=0;j<c.length;j++) {

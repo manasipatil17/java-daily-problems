@@ -3,7 +3,7 @@ package com.string;
 public class CountVowelsConsonants {
 public static void main(String[] args) {
 	String s="India is my country";
-	String[] s1=s.trim().split("\\s+");
+	String[] s1=s.trim().split(" ");
 	int countv=0;
 	int countc=0;
 	for(int i=0;i<s.length();i++) {

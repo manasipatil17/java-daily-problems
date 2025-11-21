@@ -5,6 +5,10 @@ public class LengthWithoutMethod {
 	public static void main(String[] args) {
 		String s="Manasi";
 		int count=0;
+		
+//		for(int i=0;i<s.length();i++) {
+//			count++;
+//		}
 		char[] s1=s.toCharArray();
 		
 		for(char c :s1) {

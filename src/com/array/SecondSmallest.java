@@ -10,13 +10,13 @@ public static void main(String[] args) {
 		if(a[i]<smallest) {
 			int temp=smallest;
 			smallest=a[i];
-			secSmallest=temp;	
+			secSmallest=temp;
 		}
-		else if(a[i]>smallest&& a[i]<secSmallest) {
+		else if(a[i]>smallest && a[i]<secSmallest) {
 			secSmallest=a[i];
 		}
 	}
-	System.out.println("Smallest element is "+smallest);	
-System.out.println("Smallest element is "+secSmallest);	
+		System.out.println("Smallest element is "+smallest);	
+System.out.println("Sec Smallest element is "+secSmallest);	
 }
 }
